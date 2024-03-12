@@ -2,7 +2,11 @@
   Використовуйте generics та інтерфейси, щоб виправити помилку в наступних класах:
 */
 
-class Component {
+interface some {
+  some: string;
+}
+
+class Component<T> {
   constructor (public props:T) {
 
   }
