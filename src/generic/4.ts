@@ -2,8 +2,8 @@
   Використовуйте generics та інтерфейси, щоб виправити помилку в наступних класах:
 */
 
-interface some {
-  some: string;
+interface titleT {
+  title: string;
 }
 
 class Component<T> {
@@ -12,7 +12,7 @@ class Component<T> {
   }
 }
 
-class Page extends Component {
+class Page extends Component<titleT> {
   pageInfo () {
     console.log(this.props.title);
   }
